@@ -1,0 +1,19 @@
+{
+    "benchmarks.PerformanceSuite.time_keys": {
+        "code": "class PerformanceSuite:\n    def time_keys(self):\n        # Given\n        base_url = reverse(\"api-v1:sdk-identities\")\n        # url = base_url + \"?identifier=\" + self.identity.identifier\n    \n        # When\n        # self.client.credentials(\n        #    HTTP_X_ENVIRONMENT_KEY=self.identity.environment.api_key\n        # )\n        #\n        # for test_identity_count in range(20):\n        #    response = self.client.get(url)\n        #\n        ## Then\n        # assert response.status_code == status.HTTP_200_OK\n    \n        # and\n        # assert len(response.json().get(\"flags\")) == 2\n    \n        pass\n\n    def setup(self):\n        self.client = APIClient()",
+        "min_run_count": 2,
+        "name": "benchmarks.PerformanceSuite.time_keys",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "processes": 2,
+        "repeat": 0,
+        "sample_time": 0.01,
+        "timeout": 60.0,
+        "type": "time",
+        "unit": "seconds",
+        "version": "61040e6c841db4078f58ec6489dda9d303c5d9391413565d661973ce2608df8b",
+        "warmup_time": -1
+    },
+    "version": 2
+}
